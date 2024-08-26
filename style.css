@@ -1,0 +1,357 @@
+/* ESTILO GERAL */
+*{
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTILO DO MAIN */
+/* =========================================================== */
+.classe_cabecalho{
+    background-color: #610588;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_1 {
+    height: 56px;
+    width: 81px;
+    padding: 0px 0px 0px 114px;
+  }
+
+.bloco_lista{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lista{
+    display: inline-flex;
+    padding: 15px 50px 0px 0px;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+nav ul li a {
+    color: #F2F2F2;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27.28px;
+    text-decoration:none;
+}
+
+/* =========================================================== */
+.classe_adaptelas{
+    background-color: #CAADE6;
+    color:#610588;
+    display: inline-flex;
+    align-items: center;
+    padding: 75px 114px 75px 114px;
+}
+
+.textoAdaptelas{
+    text-align: justify;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 35.46px;
+    padding: 15px 270px 0px 0px;
+}
+
+.adaptelas h1{
+    display: column;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 75px;
+    padding: 0px 300px 0px 0px;
+}
+
+.blocoDireita{
+    display: column;
+    align-items: center;
+}
+
+.imagem_body {
+    height: 404px;
+    width: 466px;
+  }
+
+/* =========================================================== */
+.classe_sobreAdaptelas{
+    background-color: #610588;
+    color:#F2F2F2;
+    display: inline-flex;
+    align-items: center;
+    padding: 60px 114px 60px 114px;
+}
+
+.blocoEsquerda{
+    display: column;
+    align-items: center;
+}
+
+.logo_2 {
+    height: 117px;
+    width: 172px;
+  }
+
+.sobreAdaptelas h2{
+    display: column;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 38.19px;
+    padding: 0px 0px 0px 344px;
+}
+
+.textoSobreAdaptelas{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27.28px;
+    padding: 10px 0px 0px 367px;
+}
+
+/* ESTILO DO RODAPÉ */
+/* =========================================================== */
+.rodape{
+    background-color: #BBAACC;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.82px;
+    padding: 15px 0px 15px 0px;
+}
+
+.rodape span{
+    color: #610588;
+}
+
+.rodape p{
+    color: #F2F2F2;
+}
+
+/* RESPONSIVIDADE */
+/* =========================================================== */
+@media screen  and (max-width: 1320px){
+    .lista{
+        padding-bottom: 15px;
+        padding-right: 50px;
+    }
+
+    .adaptelas h1{
+        padding: 0px;
+    }
+
+    .classe_adaptelas{
+        padding: 45px 50px 15px 50px;
+    }
+    
+    .imagem_body {
+        height: auto;
+        padding-right: 300px;
+        width: 98%;
+    }
+    
+    .textoAdaptelas{
+        padding: 50px 140px 50px 100px;
+    }
+
+    .sobreAdaptelas h2{
+        padding: 0px;
+    }
+
+    .classe_sobreAdaptelas{
+        padding: 45px 50px 15px 50px;
+    }
+    
+    .logo_2 {
+        height: auto;
+        padding-left: 130px;
+        width: 58%;
+    }
+    
+    .textoSobreAdaptelas{
+        padding: 35px 160px 30px 160px;
+    }
+}
+
+
+@media screen  and (max-width: 920px){
+    .classe_cabecalho{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 150px;
+    }
+
+    .logo_1{
+        position: inherit;
+        padding-top: 15px;
+        padding-right: 85px;
+    }
+
+    .classe_adaptelas{
+        flex-direction: column;
+        padding: 75px 50px 75px 50px;
+    }
+    
+    .textoAdaptelas{
+        padding: 50px 80px 50px 80px;
+    }
+    
+    .adaptelas h1{
+        padding-right: 0px;
+    }
+    
+    .imagem_body {
+        height: auto;
+        width: 68%;
+        padding-left: 120px;
+    }
+
+    .classe_sobreAdaptelas{
+        flex-direction: column-reverse;
+        padding: 35px 50px 15px 50px;
+    }
+    
+    .logo_2 {
+        height: auto;
+        padding-left: 130px;
+        width: 35%;
+    }
+    
+    .sobreAdaptelas h2{
+        padding: 0px;
+    }
+    
+    .textoSobreAdaptelas{
+        padding: 35px 160px 30px 160px;
+    }
+
+    .rodape{
+        display: flex;
+        align-items: center;
+        padding: 10px 0px 10px 0px;
+    }
+    
+    .rodape span{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .rodape p{
+        display: block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-left: 300px;
+    }
+}
+
+@media screen  and (max-width: 620px){
+    .lista{
+        padding-bottom: 15px;
+        padding-right: 20px;
+        font-size: 15px;
+    }
+
+    .textoAdaptelas{
+        padding: 50px 60px 50px 60px;
+    }
+
+    .imagem_body {
+        padding-left: 80px;
+        height: autopx;
+        width: 68%;
+    }
+
+    .logo_2 {
+        height: auto;
+        padding-left: 150px;
+        width: 28%;
+    }
+    
+    .textoSobreAdaptelas{
+        padding: 35px 100px 30px 100px;
+    }
+
+    .rodape p{
+        padding-left: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 520px) {
+    .logo_1 {
+        height: auto;
+        width: 20%;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .classe_adaptelas{
+        padding: 30px 20px 30px 20px;
+    }
+    
+    .textoAdaptelas{
+        padding: 20px 30px 20px 30px;
+        font-size: 1rem;
+    }
+    
+    .adaptelas h1{
+        font-size: 2rem;
+    }
+    
+    .imagem_body {
+        height: auto;
+        padding-left: 110px;
+        width: 50%;
+    }
+
+    .classe_sobreAdaptelas{
+        padding: 35px 50px 15px 50px;
+    }
+    
+    .logo_2 {
+        height: auto;
+        padding-left: 170px;
+        width: 25%;
+    }
+    
+    .sobreAdaptelas h2{
+        font-size: 1.5rem;
+    }
+    
+    .textoSobreAdaptelas{
+        padding: 35px 30px 30px 30px;
+        font-size: 1rem;
+    }
+
+    .rodape p{
+        font-size: 0.7rem;
+    }   
+}
+
+@media screen and (max-width: 520px) {
+    .classe_cabecalho{
+        height: 160px;
+    }
+
+    nav ul li a {
+        flex-direction: column;
+        font-size: 1rem;
+        padding-left: 20px;
+    }
+    
+    .logo_2 {
+        padding-left: 150px;
+    }
+
+    .rodape p{
+        padding-left: 60px;
+    }   
+}
